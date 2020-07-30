@@ -1,0 +1,1 @@
+nohup python test.py > output.log
