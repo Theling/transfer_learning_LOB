@@ -199,7 +199,7 @@ with engine.connect() as conn:
         trainX_CNN, trainY_CNN = get_SQLtrain(i, conn)
         trainY_CNN = np_utils.to_categorical(trainY_CNN, 3)
                 
-        deeplob.fit(trainX_CNN, trainY_CNN, epochs=5, batch_size=64, verbose=2, validation_split=0.2)
+        deeplob.fit(trainX_CNN, trainY_CNN, epochs=5, batch_size=128, verbose=2, validation_split=0.2)
 
 
 # In[ ]:
